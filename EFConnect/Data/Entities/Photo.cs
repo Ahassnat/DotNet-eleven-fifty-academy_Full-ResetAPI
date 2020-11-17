@@ -14,6 +14,8 @@ namespace EFConnect.Data.Entities
 
         public bool IsMain { get; set; }
 
+        public string PublicId { get; set; }  // For Couldinary
+
         public User User { get; set; }
 
         public int UserId { get; set; }

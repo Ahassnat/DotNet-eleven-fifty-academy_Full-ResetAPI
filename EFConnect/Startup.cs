@@ -38,6 +38,9 @@ namespace EFConnect
             services.AddDbContext<EFConnectContext>(x =>
                 x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.Configure<CloudinarySetting>(Configuration.GetSection("CloudinarySettings"));
+
+
             services.AddTransient<Seed>();
             
             services.AddScoped<IAuthService, AuthService>();
