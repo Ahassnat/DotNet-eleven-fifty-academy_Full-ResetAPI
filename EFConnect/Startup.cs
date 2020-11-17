@@ -45,6 +45,7 @@ namespace EFConnect
             
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IPhotoService, PhotoService>();
             
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)                              // <---- Added
